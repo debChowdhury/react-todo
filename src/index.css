@@ -1,13 +1,22 @@
+/* css for body having no margin and a custom font family */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Cormorant Garamond', serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* overlay for loader */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 40%;
+  left: 0px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+/* css for the react root div, setting display as flex, flex direction to column and aligning items to center */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
